@@ -1,10 +1,10 @@
 <?php
 SESSION_START();
 
-$page = 'home';
-$page_title = 'News';
+$page = 'tos';
+$page_title = 'tos';
 
-require_once('inc/functions.php');
+include('inc/functions.php');
 
 if (!prometheus::loggedIn()) {
     include('inc/login.php');
@@ -12,7 +12,6 @@ if (!prometheus::loggedIn()) {
     $UID = $_SESSION['uid'];
 }
 
-$id = $_GET['id'];
 ?>
 
 <?php include('inc/header.php'); ?>
@@ -22,9 +21,9 @@ $id = $_GET['id'];
             <?php include('inc/news.php'); ?>
             <div class="col-9">
                 <div class="header">
-                    News Post - <?= news::getPostVal($id, 'date'); ?>
+                    <?= lang('tos'); ?>
                 </div>
-                <?= news::getPostVal($id, 'content'); ?>
+                <?php echo page::get('tos'); ?>
             </div>
         </div>
     </div>

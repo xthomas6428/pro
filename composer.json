@@ -1,0 +1,17 @@
+{
+  "require": {
+    "symfony/dom-crawler": "2.6.4",
+    "masterminds/html5": "2.*",
+    "stripe/stripe-php": "^7.0.0",
+    "ext-json": "*",
+    "ext-zip": "*",
+    "ext-pdo": "*",
+    "ext-curl": "*",
+    "filp/whoops": "^2.12",
+    "ext-bcmath": "*",
+    "ext-dom": "*",
+    "ext-simplexml": "*"
+  },
+  "name": "nmscripts/prometheus",
+  "description": "A Garry's Mod payment system"
+}
